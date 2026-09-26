@@ -9,18 +9,37 @@
 
 <body>
     <h1>Sistema de Registro de Reservas de laboratorio</h1>
-    <main>
-        <section id="formulario"></section>
+   
+<main>
+<section id="formulario">
 
-        <section id="catalogo-laboratorio">
-            <h2>Catálogo de Laboratorios Disponibles</h2>
-            <ul>
-                <li>Laboratorio de Cómputo (Pabellón A) - 30 PCs, Proyector</li>
-                <li>Laboratorio de Redes y Telecomunicaciones (Pabellón B) - Racks, Routers Cisco</li>
-                <li>Laboratorio de Física (Pabellón C) - Mesas de trabajo, Instrumentos</li>
-            </ul>
-        </section>
-    </main>
+<form action="#" method="POST">
+        <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+        </p>
+
+        <p>
+            <label for="email">Correo:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="fecha">Fecha:</label><br>
+            <input type="date" id="fecha" name="fecha" required>
+        </p>
+
+        <p>
+            <label for="personas">Personas:</label><br>
+            <input type="number" id="personas" name="personas" min="1" value="1" required>
+        </p>
+
+        <p>
+            <button type="submit">Reservar</button>
+        </p>
+    </form>
+  </section>
+</main>
 </body>
 
 </html>
